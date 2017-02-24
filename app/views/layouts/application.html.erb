@@ -2,25 +2,38 @@
 <html>
   <head>
     <title>Nameofapp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%= stylesheet_link_tag "static_pages", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'defaults', 'data-turbolinks-track' => true %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
-
-   
-   
   </head>
-
   <body>
-    <nav>
-  	  <ul>
-  		  <li>Home</li>
-  		  <li>About</li>
-  		  <li>Contact</li>
-  	  </ul>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid nav-text">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="companyName navbar-brand">
+            <a id="brand-name" href="/static_pages/index">Bike Berlin</a>
+          </div>         	
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>Home</li>
+  		      <li>About</li>
+  		      <li>Contact</li>
+  	      </ul>
+  	    </div>
     </nav>
-
     <%= yield %>
-    <footer>
-    	&copy; 2017 ellaboranto
+    <footer class="site-footer" >
+    	<p class="footer-element">&copy; 2017 ellaboranto</p>
     </footer>
-
   </body>
 </html>
