@@ -83,4 +83,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  ENV["DATABASE_URL"] = "https://git.heroku.com/julesellaboranto.git"
 end
