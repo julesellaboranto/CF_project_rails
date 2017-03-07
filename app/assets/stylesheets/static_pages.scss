@@ -96,3 +96,34 @@ p {
   background: #006800;
 }
 
+/* ---------------------------
+ 6. Products
+ ----------------------------- */
+
+h3 {
+  text-align: center;
+  color: #532A67;
+}
+.description {
+  text-align: center;
+}
+.color {
+  text-align: center;
+}
+.price {
+  text-align: center;
+}
+.form-group {
+  margin-left: 20px;
+  padding-left: 50px;
+}
+h1 {
+  z-index: -1;
+}
+.form-control {
+  margin-left: 50px;
+}
+
+.image-prod {
+  max-height: 300px;
+}

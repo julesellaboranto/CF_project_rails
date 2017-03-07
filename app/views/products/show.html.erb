@@ -15,5 +15,15 @@
   <%= @product.image_url %>
 </p>
 
+<p>
+  <strong>Colour:</strong>
+  <%= @product.colour %>
+</p>
+
+<p>
+  <strong>Price:</strong><span class="glyphicons glyphicons-euro"></span>
+  <%= @product.price %>
+</p>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
