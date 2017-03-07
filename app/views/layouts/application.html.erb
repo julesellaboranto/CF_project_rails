@@ -26,9 +26,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>Home</li>
-  		      <li>About</li>
-            <li>Products</li>
-  		      <li>Contact</li>
+  		      <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Products", products_url %></li>
+  		      <li><%= link_to "Contact", static_pages_contact_path %></li>
   	      </ul>
   	    </div>
     </nav>
