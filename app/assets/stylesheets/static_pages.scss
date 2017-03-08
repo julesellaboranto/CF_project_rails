@@ -35,7 +35,7 @@ body {
  ----------------------------- */
 h1 { 
   margin: 30px;
-  color: #fff;
+  color: #532a67;
 }
 h2 { 
   margin: 100px;
@@ -97,21 +97,16 @@ p {
 }
 
 /* ---------------------------
- 6. Products
+ 7. Products
  ----------------------------- */
 
 h3 {
   text-align: center;
   color: #532A67;
 }
-.description {
+.color, .price, .description {
   text-align: center;
-}
-.color {
-  text-align: center;
-}
-.price {
-  text-align: center;
+  margin: 0px;
 }
 .form-group {
   margin-left: 20px;
@@ -123,7 +118,9 @@ h1 {
 .form-control {
   margin-left: 50px;
 }
-
 .image-prod {
   max-height: 300px;
+}
+.row {
+  border-style: red solid;
 }
