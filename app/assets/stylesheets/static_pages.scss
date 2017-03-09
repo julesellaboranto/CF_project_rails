@@ -13,9 +13,18 @@ body {
   margin: 0;
   padding: 0;
 }
+html {
+  height: 100%;
+}
+
 /* ---------------------------
  2. NavBar
  ----------------------------- */
+
+.nav {
+  z-index: -1;
+}
+
 .navbar {
   position: fixed;
   text-transform: uppercase;
@@ -28,6 +37,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-decoration: none;
+}
+#brand-name {
+  font-family: 'Permanent Marker', cursive;
+  color: #006800;
 }
 
 /* ---------------------------
