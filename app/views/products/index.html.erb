@@ -2,44 +2,10 @@
 
 <h1>Products</h1>
 
-<!--table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Colour</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= product.colour %></td>
-        <td><%= product.price %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table-->
-
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
-        <h3><%= product.name %></h3>
-        <%= image_tag(product.image_url, class: "img-responsive image-prod") %>
-        <p class="description"><strong>Description: </strong><%= product.description %></p>
-        <p class="color"><strong>Color: </strong><%= product.colour %></p>
-        <p class="price"><strong>Price: </strong><span class="glyphicons glyphicons-euro"></span><%= product.price %></p>
-      </div><!-- end col -->
+      <%= render @products %>
     <% end %>
   </div>
 </div>  
