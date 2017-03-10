@@ -4,14 +4,28 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    if params[:q]
+      search_term = params[:q]
+      if Rails.env == "development"
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      else
+        @products = Product.where("name ilike ?", "%#{search_term}%")
+      end  
+
+    #return our filtered list here
+    else
+      @products = Product.all
+    end
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-  end
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], per_page: 5)
+    # @comments = Comment.paginate(:page =>params[:page], :per_page => 5)
+    # @comments = Comment.paginate(:page => params[:page])
 
+  end
   # GET /products/new
   def new
     @product = Product.new
@@ -28,7 +42,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to :back, notice: 'Product created successfully!' }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }
@@ -36,13 +50,28 @@ class ProductsController < ApplicationController
       end
     end
   end
+  
+  def create
+    @product = Product.find(params[:product_id])
+    @comment = @product.comments.new(comment_params)
+    @comment.user = current_user
 
+    respond_to do |format|
+      if @comment.save
+        format.html { redirect_to @product, notice: 'Review was created successfully.'}
+        format.json { render :show, status: created, location: @product}
+      else
+        format.html { redirect_to @product, notice: 'Review was not saved successfully.'}
+        format.json { render json: @comment.errors, status: :unprocessable_entity}
+      end
+    end
+  end
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to '/products', notice: 'Product was successfully updated.' }
+        format.html { redirect_to '/products', notice: 'Product was successfully updated!' }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit }
@@ -56,12 +85,12 @@ class ProductsController < ApplicationController
   def destroy
     @product.destroy
     respond_to do |format|
-      format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
+      format.html { redirect_to products_url, notice: 'Product was successfully destroyed!' }
       format.json { head :no_content }
     end
   end
 
-  private
+private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
