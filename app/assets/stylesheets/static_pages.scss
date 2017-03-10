@@ -50,7 +50,7 @@ h1 {
   margin: 30px;
   color: #532a67;
 }
-h2 { 
+.index-header { 
   margin: 100px;
   padding: 20px;
   color: #532a67;
@@ -94,23 +94,7 @@ p {
 }
 
 /* ---------------------------
- 6. footer
- ----------------------------- */
-.footer-element {
-  float: right;
-  display: inline;
-  padding: 10px 30px;
-  text-align: right;
-}
-.site-footer, .page-wrap:after {
-  height: 142px; 
-}
-.site-footer {
-  background: #006800;
-}
-
-/* ---------------------------
- 7. Products
+ 6. Products
  ----------------------------- */
 
 h3 {
@@ -136,4 +120,38 @@ h1 {
 }
 .row {
   border-style: red solid;
+}
+/* ---------------------------
+ 7. carousel
+ ----------------------------- */
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive {
+  display: inline;
+  position: relative;
+  left: 80px;
+  max-width: auto;
+  max-height: 40%;
+  margin-left: 100px;
+}
+.Featured-title {
+  z-index: -1;
+  margin-top: 60px;
+  padding: 5px;
+}
+
+/* ---------------------------
+ . footer
+ ----------------------------- */
+.footer-element {
+  float: right;
+  display: inline;
+  padding: 10px 30px;
+  text-align: right;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: #006800;
 }
