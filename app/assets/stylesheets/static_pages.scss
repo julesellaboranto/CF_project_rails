@@ -41,6 +41,11 @@ html {
 }
 .btn-search {
   background-color: #006800;
+  max-height: auto;
+  margin-top: 10px;
+}
+.form-control {
+  margin-top: 10px;  
 }
 .pull-right {
   text-align: right;
@@ -131,6 +136,7 @@ h3 {
 .row {
   border-style: red solid;
 }
+
 /* ---------------------------
  7. carousel
  ----------------------------- */
