@@ -26,13 +26,10 @@ html {
 }
 
 .navbar {
-  position: fixed;
   text-transform: uppercase;
 }
 .navbar-nav > li {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 13px;
+  padding-right: 2px;
   color: #532a67;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -42,13 +39,20 @@ html {
   font-family: 'Permanent Marker', cursive;
   color: #006800;
 }
-
+.btn-search {
+  background-color: #006800;
+}
+.pull-right {
+  text-align: right;
+  display: inline;
+}
 /* ---------------------------
  3. index
  ----------------------------- */
 h1 { 
   margin: 30px;
   color: #532a67;
+  z-index: -1;
 }
 .index-header { 
   margin: 100px;
@@ -105,15 +109,21 @@ h3 {
   text-align: center;
   margin: 0px;
 }
-.form-group {
+.field {
   margin-left: 20px;
   padding-left: 50px;
 }
-h1 {
-  z-index: -1;
-}
 .form-control {
   margin-left: 50px;
+  width: 400px;
+}
+.btn-success {  
+  margin-left: 20px;
+  width: 130px;
+}
+.actions {
+  margin-left: 50px;
+  padding-left: 50px;
 }
 .image-prod {
   max-height: 300px;
@@ -138,13 +148,18 @@ h1 {
   margin-top: 60px;
   padding: 5px;
 }
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev    { left: -25%; }
+.carousel-control        { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+
 
 /* ---------------------------
  . footer
  ----------------------------- */
 .footer-element {
   float: right;
-  display: inline;
   padding: 10px 30px;
   text-align: right;
 }
