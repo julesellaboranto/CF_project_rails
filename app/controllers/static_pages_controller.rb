@@ -4,7 +4,7 @@ class StaticPagesController < ApplicationController
     @products = Product.limit(3)
   end
 
-#module CarouselHelper
+ #module CarouselHelper
   #def carousel_for(images)
     #Carousel.new(self, images).html
   #end
