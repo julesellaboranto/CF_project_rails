@@ -1,3 +1,27 @@
-<h1 class="headline">Contact</h1>
-<%= image_tag("contact.jpg", class: "img-responsive", class: "contact-img") %>
-<p>contact us for more information or questions about bikes</p>
+<%= flash[:notice] %>
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+  <div class="col-md-4">
+    <h1 class="headline">Contact Us</h1>
+    <div class="form-group">
+      <%= label_tag :name, "Name", class: "contacts" %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :email, "Email Address", class: "contacts" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :message, "Message", class: "contacts" %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+    </div>      
+  </div>
+</div>
+<div class="Send-btn">
+  <%= submit_tag "Send", class: "btn btn-search" %>   
+  <% end %>
+</div>
+
+<%#= image_tag("contact.jpg", class: "img-responsive", class: "contact-img") %>
+<!--<p>contact us for more information or questions about bikes</p>-->
+
