@@ -18,13 +18,29 @@ html {
 }
 
 /* ---------------------------
- 2. NavBar
+ 2. General
+ ----------------------------- */
+
+h1 { 
+  margin: 30px;
+  color: #532a67;
+  z-index: -1;
+}
+h2 {
+  margin-left: 120px;
+}
+h3 {
+  text-align: center;
+  color: #532A67;
+}
+
+/* ---------------------------
+ 3. NavBar
  ----------------------------- */
 
 .nav {
   z-index: -1;
 }
-
 .navbar {
   text-transform: uppercase;
 }
@@ -51,14 +67,10 @@ html {
   text-align: right;
   display: inline;
 }
+
 /* ---------------------------
- 3. index
+ 4. index
  ----------------------------- */
-h1 { 
-  margin: 30px;
-  color: #532a67;
-  z-index: -1;
-}
 .index-header { 
   margin: 100px;
   padding: 20px;
@@ -82,36 +94,34 @@ h1 {
   content: "";
   display: block;
 }
+
 /* ---------------------------
- 4. about
+ 5. about
  ----------------------------- */
 .headline {
-	z-index: -1;
-	margin-top: 100px;
+  z-index: -1;
+  margin-top: 100px;
 }
 p {
-	margin: 100px;
+  margin: 100px;
 }
 
 /* ---------------------------
- 5. contact
+ 6. contact
  ----------------------------- */
 .contact-img {
-	height: 200px;
-	width: 300px;
-	margin-left: 100px;
+  height: 200px;
+  width: 300px;
+  margin-left: 100px;
 }
 .contacts {
   margin-left: 50px;
 }
+
 /* ---------------------------
- 6. Products
+ 7. Products
  ----------------------------- */
 
-h3 {
-  text-align: center;
-  color: #532A67;
-}
 .color, .price, .description {
   text-align: center;
   margin: 0px;
@@ -122,11 +132,15 @@ h3 {
 }
 .form-control {
   margin-left: 50px;
+  margin-bottom: 5px;
   width: 400px;
 }
 .btn-success {  
   margin-left: 20px;
+  margin-top: 10px;
   width: 130px;
+  background: #006800;
+  border-color: #006800;
 }
 .actions {
   margin-left: 50px;
@@ -140,7 +154,7 @@ h3 {
 }
 
 /* ---------------------------
- 7. carousel
+ 8. carousel
  ----------------------------- */
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img {
@@ -172,15 +186,29 @@ h3 {
   margin-top: 60px;
   padding: 5px;
 }
+
 /* ---------------------------
- . thank_you
+ 9. Misc
  ----------------------------- */
 .thank-you-text {
   color: #006800;
 }
+.login-field {
+  margin-left: 60px;
+ 
+}
+.check-box {
+  margin-left: 120px;
+}
+.btn-danger {
+  margin-top: 10px;
+  margin-left: 20px;
+  background: #006800;
+  border-color: #006800;
+}
 
 /* ---------------------------
- . footer
+ 10. footer
  ----------------------------- */
 .footer-element {
   float: right;
