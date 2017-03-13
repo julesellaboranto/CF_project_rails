@@ -33,6 +33,15 @@ h3 {
   text-align: center;
   color: #532A67;
 }
+.headline {
+  z-index: -1;
+  margin-top: 50px;
+}
+.btn-search {
+  background-color: #006800;
+  max-height: auto;
+  margin-top: 10px;
+}
 
 /* ---------------------------
  3. NavBar
@@ -55,10 +64,9 @@ h3 {
   font-family: 'Permanent Marker', cursive;
   color: #006800;
 }
-.btn-search {
+.btn-info {
   background-color: #006800;
   max-height: auto;
-  margin-top: 10px;
 }
 .form-control {
   margin-top: 10px;  
@@ -98,12 +106,9 @@ h3 {
 /* ---------------------------
  5. about
  ----------------------------- */
-.headline {
-  z-index: -1;
-  margin-top: 100px;
-}
+
 p {
-  margin: 100px;
+  margin: 50px;
 }
 
 /* ---------------------------
@@ -116,6 +121,11 @@ p {
 }
 .contacts {
   margin-left: 50px;
+}
+.btn-primary {
+  margin-left: 50px;
+  background: #006800;
+  border-color: #006800;
 }
 
 /* ---------------------------
