@@ -46,8 +46,14 @@
           </ul>
   	    </div>
       </nav>
-      <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+      <div class="alert alert-danger" role="alert">
+        <% if notice %>
+          <p class="notice"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert"><%= alert %></p>
+        <% end %>
+      </div>
     <%= yield %>
     <footer class="site-footer" >
     	<p class="footer-element">&copy; 2017 ellaboranto</p>
