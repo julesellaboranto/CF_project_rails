@@ -19,11 +19,6 @@ class StaticPagesController < ApplicationController
       :subject => "A new contact form message from #{@name}",
       :body => @message).deliver_now
 end
-
- #module CarouselHelper
-  #def carousel_for(images)
-    #Carousel.new(self, images).html
-  #end
 end
 
 
