@@ -1,0 +1,465 @@
+/* line 1, C:/nameofapp/app/assets/stylesheets/products.scss */
+h3 {
+  text-align: center;
+  color: #532A67;
+}
+
+/* line 6, C:/nameofapp/app/assets/stylesheets/products.scss */
+p {
+  text-align: center;
+}
+
+/* line 10, C:/nameofapp/app/assets/stylesheets/products.scss */
+.field .actions {
+  margin-left: 20px;
+  padding-left: 50px;
+  margin-right: 100px;
+}
+
+/* line 16, C:/nameofapp/app/assets/stylesheets/products.scss */
+h1 {
+  z-index: -1;
+}
+
+/* line 20, C:/nameofapp/app/assets/stylesheets/products.scss */
+.form-control {
+  margin-left: 50px;
+  width: 200px;
+}
+/* line 1, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, C:/nameofapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* ---------------------------
+ 1. Body
+ ----------------------------- */
+/* line 6, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  position: relative;
+  background-color: #222222;
+  margin: none;
+  font-family: Helvetica, Garamond, Verdana, sans-serif;
+  font-size: 14px;
+  color: #e6e6fa;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+html {
+  height: 100%;
+}
+
+/* ---------------------------
+ 2. General
+ ----------------------------- */
+/* line 25, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  margin: 30px;
+  color: #f0e6fa;
+  z-index: -1;
+}
+
+/* line 30, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  margin-left: 120px;
+}
+
+/* line 33, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+h3 {
+  text-align: center;
+  color: #f0e6fa;
+}
+
+/* line 37, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.headline {
+  z-index: -1;
+  margin-top: 50px;
+}
+
+/* line 41, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-search {
+  background-color: #006800;
+  max-height: auto;
+  margin-top: 10px;
+}
+
+/* ---------------------------
+ 3. NavBar
+ ----------------------------- */
+/* line 51, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.nav {
+  z-index: -1;
+}
+
+/* line 54, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  text-transform: uppercase;
+}
+
+/* line 57, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-nav > li {
+  padding-right: 2px;
+  color: #532a67;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+/* line 64, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+#brand-name {
+  font-family: 'Permanent Marker', cursive;
+  color: #006800;
+}
+
+/* line 68, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-info {
+  background-color: #006800;
+  border-color: #006800;
+  max-height: auto;
+  margin-top: 3.2px;
+}
+
+/* line 74, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  margin-top: 10px;
+}
+
+/* line 77, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pull-right {
+  text-align: right;
+  display: inline;
+}
+
+/* ---------------------------
+ 4. index
+ ----------------------------- */
+/* line 85, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.index-header {
+  margin: 100px;
+  padding: 20px;
+  color: #532a67;
+  size: 16px;
+}
+
+/* line 91, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.p {
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+/* line 95, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.front-img {
+  max-height: 99vh;
+  width: 98.5vw;
+}
+
+/* line 99, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+
+/* line 104, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* ---------------------------
+ 5. about
+ ----------------------------- */
+/* line 113, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+p {
+  margin: 50px;
+}
+
+/* ---------------------------
+ 6. contact
+ ----------------------------- */
+/* line 120, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.contact-img {
+  height: 200px;
+  width: 300px;
+  margin-left: 100px;
+}
+
+/* line 125, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.contacts {
+  margin-left: 50px;
+}
+
+/* line 128, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-primary {
+  margin-left: 50px;
+  background: #006800;
+  border-color: #006800;
+}
+
+/* ---------------------------
+ 7. Products
+ ----------------------------- */
+/* line 138, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.color, .price, .description {
+  text-align: center;
+  margin: 0px;
+}
+
+/* line 142, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.field {
+  margin-left: 20px;
+  padding-left: 50px;
+}
+
+/* line 146, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  margin-left: 50px;
+  margin-bottom: 5px;
+  width: 400px;
+}
+
+/* line 151, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-success {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 130px;
+  background: #006800;
+  border-color: #006800;
+}
+
+/* line 158, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.actions {
+  margin-left: 50px;
+  padding-left: 50px;
+}
+
+/* line 162, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.image-prod {
+  max-height: 300px;
+}
+
+/* line 165, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.row {
+  border-style: red solid;
+}
+
+/* ---------------------------
+ 8. carousel
+ ----------------------------- */
+/* line 172, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  display: inline;
+  position: relative;
+  left: 80px;
+  max-width: auto;
+  max-height: 30%;
+  margin-left: 100px;
+}
+
+/* line 181, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner .active.left {
+  left: -25%;
+}
+
+/* line 184, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner .next {
+  left: 25%;
+}
+
+/* line 187, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner .prev {
+  left: -25%;
+}
+
+/* line 190, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-control {
+  width: 4%;
+}
+
+/* line 193, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-control.left, .carousel-control.right {
+  margin-left: 15px;
+  background-image: none;
+}
+
+/* line 197, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.Featured-title {
+  z-index: -1;
+  margin-top: 60px;
+  padding: 5px;
+}
+
+/* ---------------------------
+ 9. Misc
+ ----------------------------- */
+/* line 206, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.thank-you-text {
+  color: #006800;
+}
+
+/* line 209, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.login-field {
+  margin-left: 60px;
+}
+
+/* line 213, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.check-box {
+  margin-left: 120px;
+}
+
+/* line 216, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-danger {
+  margin-top: 10px;
+  margin-left: 20px;
+  background: #006800;
+  border-color: #006800;
+}
+
+/* line 222, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.field-checkbox {
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+/* line 226, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.authentication-form {
+  margin-left: 10px;
+}
+
+/* line 229, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.authentication-header {
+  margin-left: 105px;
+}
+
+/* ---------------------------
+ 10. footer
+ ----------------------------- */
+/* line 236, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer-element {
+  float: right;
+  text-align: right;
+}
+
+/* line 240, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+/* line 243, C:/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  margin-top: 20px;
+  background: #006800;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
