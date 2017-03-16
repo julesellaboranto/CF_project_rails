@@ -4,7 +4,7 @@
 
 body {
   position: relative;
-  background-color: green;
+  background-color: #222222;
   margin: none;
   font-family: Helvetica, Garamond, Verdana, sans-serif;
   font-size: 14px;
@@ -28,6 +28,9 @@ h1 {
 }
 h2 {
   margin-left: 120px;
+  margin-top: 20px;
+  padding-top: 40px;
+  z-index: -1;
 }
 h3 {
   text-align: center;
@@ -227,6 +230,9 @@ p {
 }
 .authentication-header {
   margin-left: 105px;
+}
+#user-name {
+  margin-left: 20px;
 }
 
 /* ---------------------------
