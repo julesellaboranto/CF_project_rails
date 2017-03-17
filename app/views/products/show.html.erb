@@ -23,8 +23,8 @@
       <strong><span class="glyphicon glyphicon-euro"</span></strong>
       <%= @product.price %>
     </p>
-    <p>
-      <%= @product.highest_rating_comment %> 
+    <p><strong>Best comment: </strong>
+      <%= @product.highest_rating_comment.body %> 
     </p>
   </div>
 </div>
