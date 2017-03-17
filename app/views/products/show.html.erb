@@ -1,29 +1,36 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-4">
+    <p>
+      <strong><%= image_tag(@product.image_url, width: "90%", class: "img-show", class: "thumbnail") %></strong>
+      <%= link_to 'Back to Overview', products_path, class: "btn btn-info" %>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p>
+      <strong><%= @product.name %></strong>
+    </p>
+    <p>
+      <strong><%= @product.description %></strong>
+    </p>
+    <p>
+      <strong>Colour:</strong>
+      <%= @product.colour %>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p class="product-price">
+      <strong><span class="glyphicon glyphicon-euro"</span></strong>
+      <%= @product.price %>
+    </p>
+    <p>
+      <%= @product.highest_rating_comment %> 
+    </p>
+  </div>
+</div>
+<div class="links">
+  <% if signed_in? %>
+    <%= link_to 'Edit this product', edit_product_path(@product) %> 
+  <% end %>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= image_tag(@product.image_url, class: "img-show") %>
-</p>
-
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>

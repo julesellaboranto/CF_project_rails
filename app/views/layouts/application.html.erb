@@ -38,7 +38,12 @@
   		      <li><%= link_to "Contact", static_pages_contact_path %></li>
             <li>
               <% if user_signed_in? %>
-                <%= link_to ('Settings') %>
+                <%= link_to "Profile", users_path(@user) %>
+              <% end %>
+            </li>
+               <li>
+              <% if user_signed_in? %>
+                <%= link_to "My Order", orders_path(@order) %>
               <% end %>
             </li>
             <li>
@@ -51,14 +56,12 @@
           </ul>
   	    </div>
       </nav>
-      <div class="alert alert-success" id="message" role="alert">
         <% if notice %>
-          <p class="notice"><%= notice %></p>
+          <p id="notice" class="alert alert-info"><%= notice %></p>
         <% end %>
         <% if alert %>
-          <p class="alert"><%= alert %></p>
+          <p id="alert" class="alert alert-info"><%= alert %></p>
         <% end %>
-      </div>
     <%= yield %>
     <footer class="site-footer" >
     	<p class="footer-element">&copy; 2017 ellaboranto</p>
