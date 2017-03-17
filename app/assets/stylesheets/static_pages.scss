@@ -23,6 +23,7 @@ html {
 
 h1 { 
   margin: 30px;
+  margin-top: 100px;
   color: #00ffff;
   z-index: -1;
 }
@@ -38,7 +39,7 @@ h3 {
 }
 .headline {
   z-index: -1;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .btn-search {
   background-color: #006800;
@@ -237,7 +238,7 @@ p {
 .authentication-header {
   margin-left: 105px;
 }
-#user-name {
+.user-name {
   margin-left: 20px;
 }
 
