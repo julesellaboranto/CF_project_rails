@@ -34,9 +34,17 @@
 
   </div>
 </div>
-<div class="links">
-  <% if signed_in? %>
-    <%= link_to 'Edit this product', edit_product_path(@product) %> 
-  <% end %>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="links">
+      <% if signed_in? %>
+        <%= link_to 'Edit this product', edit_product_path(@product) %> 
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <p>All product ratings</p>
+  </div>
 </div>
 
