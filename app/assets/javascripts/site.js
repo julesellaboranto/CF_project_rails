@@ -1,6 +1,6 @@
 $(document).on('turbolinks:load', function(){
-  $('.alert-success').delay(2000).fadeOut(2500);
-)}
+  $('.alert').delay(2000).fadeOut(3000);
+})
 
 /*function hideAlert() {
     $("#message").addClass("out");
