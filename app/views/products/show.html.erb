@@ -25,11 +25,11 @@
     </p>
     <p>
       <strong>Best comment: </strong>
-      <%= @product.highest_rating_comment.body %> 
+      <%= @product.highest_rating_comment.try(:body) %> 
     </p>
     <p>
       <strong>And a not so good comment: </strong>
-      <%= @product.lowest_rating_comment.body %>
+      <%= @product.lowest_rating_comment.try(:body) %>
     </p>
 
   </div>
