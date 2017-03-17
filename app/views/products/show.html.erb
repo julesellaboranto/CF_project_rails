@@ -24,13 +24,27 @@
       <%= @product.price %>
     </p>
     <p>
-      <%= @product.highest_rating_comment %> 
+      <strong>Best comment: </strong>
+      <%= @product.highest_rating_comment.try(:body) %> 
     </p>
+    <p>
+      <strong>And a not so good comment: </strong>
+      <%= @product.lowest_rating_comment.try(:body) %>
+    </p>
+
   </div>
 </div>
-<div class="links">
-  <% if signed_in? %>
-    <%= link_to 'Edit this product', edit_product_path(@product) %> 
-  <% end %>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="links">
+      <% if signed_in? %>
+        <%= link_to 'Edit this product', edit_product_path(@product) %> 
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <p>All product ratings</p>
+  </div>
 </div>
 
