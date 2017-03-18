@@ -2,15 +2,13 @@
   <h4>Add a review:</h4>
   <%= form_for([@product, @product.comments.build]) do |f| %>
     <p>
-      <%= f.label :body, "Comments" %><br>
-      <%= f.text_area :body %>
+      <%= f.text_area :body, class: "form-control", id: "enter-comment", placeholder: "Enter Comment" %>
     </p>
     <p>
-      <%= f.label :rating %><br>
       <%= f.text_field :rating, class: "rating" %>
     </p>  
     <p>
-      <%= f.submit "Submit" %>
+      <%= f.submit "Rate this product", class: "btn btn-info" %>
     </p>
   <% end %>
 <% end %>

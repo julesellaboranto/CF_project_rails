@@ -24,7 +24,7 @@ html {
 h1 { 
   margin: 30px;
   margin-top: 100px;
-  color: #00ffff;
+  color: #f0e6fa;
   z-index: -1;
 }
 h2 {
@@ -40,6 +40,9 @@ h3 {
 .headline {
   z-index: -1;
   margin-top: 100px;
+}
+h4 {
+  margin-left: 50px;
 }
 .btn-search {
   background-color: #006800;
@@ -173,6 +176,29 @@ p {
 }
 .links {
   margin-left: 50px;
+}
+/* ---------------------------
+ 8. Rating
+ ----------------------------- */
+
+.rated {
+  margin-left: 50px;
+}
+.stars {
+  margin-bottom: 1px;
+}
+.rating {
+  margin-left: 4px;
+}
+.btn-default {
+  margin-left: 10px;
+  background: #006800;
+  border-color: #006800;
+  color: #f0e6fa;
+}
+#enter-comment {
+  margin-left: 4px;
+  max-width: 319px;
 }
 
 /* ---------------------------

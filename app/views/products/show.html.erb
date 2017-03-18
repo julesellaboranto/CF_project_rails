@@ -31,20 +31,18 @@
       <strong>And a not so good comment: </strong>
       <%= @product.lowest_rating_comment.try(:body) %>
     </p>
-
+    <p class="stars">Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
   </div>
 </div>
-
 <div class="row">
   <div class="col-md-4">
-    <div class="links">
-      <% if signed_in? %>
-        <%= link_to 'Edit this product', edit_product_path(@product) %> 
-      <% end %>
-    </div>
+    <% if signed_in? %>
+      <%= render "products/new_comment" %>
+    <% end %>
   </div>
   <div class="col-md-4">
-    <p>All product ratings</p>
+    <%=  render "comments" %>
   </div>
+</div>
 </div>
 
