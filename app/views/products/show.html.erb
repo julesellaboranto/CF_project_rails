@@ -38,18 +38,20 @@
 <div class="row">
   <div class="col-md-4">
     <div class="links">
+    <hr>
       <% if signed_in? %>
         <%= link_to 'Edit this product', edit_product_path(@product) %>
         <% end %>
     </div>
   </div>
   <div class="col-md-4">
+    <%=  render "comments" %>
+    <%= will_paginate @comments %>
+  </div>
+  <div class="col-md-4">
     <% if signed_in? %>
       <%= render "products/new_comment" %>
     <% end %>
-  </div>
-  <div class="col-md-4">
-    <%=  render "comments" %>
   </div>
 </div>
 </div>
