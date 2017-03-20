@@ -31,7 +31,8 @@
       <strong>And a not so good comment: </strong>
       <%= @product.lowest_rating_comment.try(:body) %>
     </p>
-    <p class="stars">Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    <p class="stars">Average Rating:<div class="rated" data-score="<%= @product.average_rating %>"></div>
+    </p>
   </div>
 </div>
 <div class="row">
