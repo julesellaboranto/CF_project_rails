@@ -2,7 +2,11 @@
     <% @comments.each do |comment| %>
         <div class="row">
             <hr>
-            <p class="single-comment"><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small></p>
+            <p class="single-comment"><%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>&nbsp
+    <% if signed_in? && current_user.admin? %>
+        <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+            </p>
             <p class="single-comment"><%= "Rating: #{comment.rating}/5" %></p>
             <p class="single-comment"><%= comment.body %></p>
         </div>
