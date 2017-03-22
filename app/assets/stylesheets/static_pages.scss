@@ -143,7 +143,7 @@ p {
 
 .color, .price, .description {
   text-align: center;
-  margin: 0px;
+  margin: 0em;
 }
 .field {
   margin-left: 20px;
@@ -168,14 +168,18 @@ p {
 .image-prod {
   max-height: 300px;
 }
-.row {
-  border-style: red solid;
+.single-product {
+  border: 0.1em solid #fff;
+  margin-bottom: 1em;
 }
 .product-price {
   font-size: 30px;
 }
 .links {
   margin-left: 50px;
+}
+.show-details {
+  padding-left: 0.5em;  
 }
 /* ---------------------------
  8. Rating

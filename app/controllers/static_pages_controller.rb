@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
     @products = Product.limit(3)
   end
 
-   def contact_form(email, name, message)
+  def contact_form(email, name, message)
     @message = message
     mail(:from => email,
       :to => 'juliaf.landsiedel@gmail.com',
@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
       :to => 'juliaf.landsiedel@gmail.com',
       :subject => "A new contact form message from #{@name}",
       :body => @message).deliver_now
-end
+  end
 end
 
 

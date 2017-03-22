@@ -9,11 +9,11 @@
     </div>
     <div class="form-group">
       <%= label_tag :email, "Email Address", class: "contacts" %>
-      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+      <%= text_field_tag :email, nil, class: "form-control",:required => true, placeholder: "Enter Email" %>
     </div>
     <div class="form-group">
       <%= label_tag :message, "Message", class: "contacts" %>
-      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+      <%= text_area_tag :message, nil, class: "form-control",:required => true, placeholder: "Enter Message" %>
     </div>      
   </div>
 </div>

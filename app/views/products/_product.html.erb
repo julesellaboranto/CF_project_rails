@@ -1,7 +1,14 @@
-<div class="col-sm-2 col-md-4">
+<div class="col-sm-4 col-md-4 col-xs-8">
+  <div class="single-product">
   <%= image_tag(product.image_url, class: "img-responsive image-prod") %>
+  <td><%= link_to 'Show', product, class:"show-details" %></td>
   <h3><%= product.name %></h3>
   <p class="description"><%= product.description %></p>
   <p class="color"><%= product.colour %></p>
   <p class="price">€<%= product.price %></p>
+  <% if signed_in? && current_user.admin? %>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
 </div><!-- end col -->
+</div>
