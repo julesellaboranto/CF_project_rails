@@ -2,7 +2,7 @@
  1. Body
  ----------------------------- */
 
-body {
+body, html {
   position: relative;
   background-color: #222222;
   margin: none;
@@ -12,13 +12,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-html {
   height: 100%;
 }
 
 /* ---------------------------
- 2. General
+ 2. headlines
  ----------------------------- */
 
 h1 { 
@@ -44,6 +42,7 @@ h3 {
 h4 {
   margin-left: 50px;
 }
+
 .btn-search {
   background-color: #006800;
   max-height: auto;
@@ -86,7 +85,7 @@ h4 {
 }
 
 /* ---------------------------
- 4. index
+ 4. index/welcome page
  ----------------------------- */
 .index-header { 
   margin: 100px;
@@ -105,7 +104,7 @@ h4 {
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -142px; 
+  margin-bottom: -60px; 
 }
 .page-wrap:after {
   content: "";
@@ -118,6 +117,15 @@ h4 {
 
 p {
   margin: 50px;
+}
+#about-bikes {
+  margin-left: 20em;  
+}
+.info-box {
+  background-color: #680068;
+  border-radius: 10px;
+  height: 10em;
+  text-align: center;
 }
 
 /* ---------------------------
@@ -150,6 +158,7 @@ p {
 .color, .price, .description {
   text-align: center;
   margin: 0em;
+  color: #e6e6fa;
 }
 .field {
   margin-left: 20px;
@@ -187,6 +196,7 @@ p {
 .show-details {
   padding-left: 0.5em;  
 }
+
 /* ---------------------------
  8. Rating
  ----------------------------- */
@@ -217,7 +227,7 @@ p {
 }
 
 /* ---------------------------
- 8. carousel
+ 9. carousel
  ----------------------------- */
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img {
@@ -251,7 +261,7 @@ p {
 }
 
 /* ---------------------------
- 9. Misc
+ 10. Misc
  ----------------------------- */
 .thank-you-text {
   color: #006800;
@@ -284,22 +294,20 @@ p {
 }
 
 /* ---------------------------
- 10. footer
+ 11. footer
  ----------------------------- */
-.footer-element {
-  float: right;
-  text-align: right;
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
-.site-footer, .page-wrap:after {
-  height: 142px; 
-}
-footer {
-  margin-top: 20px;
-  background: #006800;
+.footer, .push {
+    height: 142px; 
 }
 
 /* ---------------------------
- 11. pagination
+ 12. pagination
  ----------------------------- */
 
 //btn {
@@ -379,3 +387,16 @@ footer {
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#565b5f), to(#3e4347));
     background: -moz-linear-gradient(0% 0% 270deg,#565b5f, #3e4347);
 }
+
+/* ---------------------------
+ 13. User
+ ----------------------------- */
+.user-overview {
+  padding: 1em;
+}
+.user-profile {
+  padding: 1em;  
+  text-decoration: underline;
+}
+
+

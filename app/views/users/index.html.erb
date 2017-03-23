@@ -5,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
+      <th class="user-profile">First name</th>
+      <th class="user-profile">Last name</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,10 +14,10 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td class="user-overview"><%= user.first_name %></td>
+        <td class="user-overview"><%= user.last_name %></td>
+        <td class="user-overview"><%= link_to 'Show', user %></td>
+        <td class="user-overview"><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

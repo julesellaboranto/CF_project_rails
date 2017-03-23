@@ -37,7 +37,7 @@
             <li><%= link_to "Products", products_url %></li>
   		      <li><%= link_to "Contact", static_pages_contact_path %></li>
             <li>
-              <% if user_signed_in? %>
+              <% if user_signed_in? && current_user.admin? %>
                 <%= link_to "Profile", users_path(@user) %>
               <% end %>
             </li>
@@ -63,7 +63,12 @@
           <p id="alert" class="alert alert-info"><%= alert %></p>
         <% end %>
     <%= yield %>
+    <div class="wrapper">
+      <div class="push">
+      </div>
+    </div>
     <footer class="site-footer" >
+    <hr>
     	<p class="footer-element">&copy; 2017 <a target="_new" href="http://julesellaboranto.bitballoon.com/"</a>ellaboranto</p>
     </footer>
   </body>
