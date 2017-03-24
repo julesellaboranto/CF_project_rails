@@ -23,7 +23,23 @@
       <strong><span class="glyphicon glyphicon-euro"</span></strong>
       <%= @product.price %>
     </p>
-    <p>
+    <div class="product-price">  
+      <% if user_signed_in? %>
+        <%= form_tag "/payments/create" do %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="links">
+      <hr>
+      <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Edit this product', edit_product_path(@product) %>
+      <% end %>
+      <p>
       <strong>Best comment: </strong>
       <%= @product.highest_rating_comment.try(:body) %> 
     </p>
@@ -33,15 +49,6 @@
     </p>
     <p class="stars">Average Rating:<div class="rated" data-score="<%= @product.average_rating %>"></div>
     </p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="links">
-      <% if signed_in? && current_user.admin? %>
-      <hr>
-        <%= link_to 'Edit this product', edit_product_path(@product) %>
-        <% end %>
     </div>
   </div>
   <div class="col-md-4">
