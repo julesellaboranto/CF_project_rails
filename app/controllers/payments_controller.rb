@@ -18,7 +18,7 @@ class PaymentsController < ApplicationController
 		      :user_id => @user_id,
 		      :total => @total
 		      )
-		  end
+		end
 
 		  rescue Stripe::CardError => e
 		    body = e.json_body

@@ -41,10 +41,12 @@ ruby '2.2.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  require 'byebug' 
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
   gem "factory_girl_rails", "~> 4.0"
+
 end
 
 group :development do
