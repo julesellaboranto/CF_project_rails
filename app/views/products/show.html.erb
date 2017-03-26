@@ -25,10 +25,11 @@
     </p>
     <div class="product-price">  
       <% if user_signed_in? %>
-        <%= form_tag "/payments/create" do %>
-          <%= render partial: "shared/stripe_checkout_button" %>
-        <% end %>
+          <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+            <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
+    <% end %>
     </div>
   </div>
 </div>
