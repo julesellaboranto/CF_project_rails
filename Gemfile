@@ -45,7 +45,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
   gem "factory_girl_rails", "~> 4.0"
-
+  gem "brakeman", :require => false
 end
 
 group :development do
@@ -69,4 +69,5 @@ gem 'cancancan', '~> 1.10'
 gem 'rails-controller-testing'
 
 gem 'stripe'
+
 

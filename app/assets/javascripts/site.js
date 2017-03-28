@@ -7,16 +7,10 @@ $(document).on('turbolinks:load', function(){
         return $(this).attr('data-score');
       }
     });
+    $('.img-zoom').elevateZoom();
 });
 
 
   
 
 
-/*function hideAlert() {
-    $("#message").addClass("out");
-}
-
-window.setTimeout(function () {
-    hideAlert();
-}, 1000);*/
