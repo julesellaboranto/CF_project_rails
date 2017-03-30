@@ -7,6 +7,7 @@
     </p>
   </div>
   <div class="col-md-4">
+    <% cache @product do %>
     <p>
       <strong><%= @product.name %></strong>
     </p>
@@ -23,6 +24,7 @@
       <strong><span class="glyphicon glyphicon-euro"</span></strong>
       <%= @product.price %>
     </p>
+    <% end %>
     <div class="product-price">  
       <% if user_signed_in? %>
           <%= form_tag "/payments/create" do %>
