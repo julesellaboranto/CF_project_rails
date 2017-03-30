@@ -33,10 +33,10 @@
     </div>
   </div>
 </div>
+<hr>
 <div class="row">
   <div class="col-md-4">
     <div class="links">
-      <hr>
       <% if signed_in? && current_user.admin? %>
         <%= link_to 'Edit this product', edit_product_path(@product) %>
       <% end %>
@@ -48,8 +48,7 @@
       <strong>And a not so good comment: </strong>
       <%= @product.lowest_rating_comment.try(:body) %>
     </p>
-    <p class="stars">Average Rating:<div class="rated" data-score="<%= @product.average_rating %>"></div>
-    </p>
+    <p>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
     </div>
   </div>
   <div class="col-md-4">

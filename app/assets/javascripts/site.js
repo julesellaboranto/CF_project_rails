@@ -1,4 +1,5 @@
 $('.alert').delay(2000).fadeOut(3000);
+//comment section
 $(document).on('turbolinks:load', function(){
     $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
     $('.rated').raty({ path: '/assets',
@@ -7,9 +8,11 @@ $(document).on('turbolinks:load', function(){
         return $(this).attr('data-score');
       }
     });
-    $('.img-zoom').elevateZoom();
+$(document).on('turbolinks:load ajaxSuccess', function() {
+// zoom plugin	
+$('.img-zoom').elevateZoom();
 });
-
+  });
 
   
 
