@@ -7,16 +7,24 @@ class Product < ApplicationRecord
 	validates :colour, presence: true
 	validates :price, presence: true, numericality: true
 
-def highest_rating_comment
+  def highest_rating_comment
 	comments.rating_desc.first
-end
+  end
 
-def lowest_rating_comment
+  def lowest_rating_comment
     comments.rating_asc.first
-end
+  end
 
-def average_rating
-  comments.average(:rating).to_f
-end
+  def average_rating
+    comments.average(:rating).to_f
+  end
+
+  def views
+    $redis.get("product:#{id}")
+  end
+
+  def viewed!
+    $redis.incr("product:#{id}")
+  end
 
 end
