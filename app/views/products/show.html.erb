@@ -4,7 +4,7 @@
     <p>
       <strong><%= image_tag(@product.image_url, width: "390", class: "img-show thumbnail img-responsive img-zoom", data_zoom_image: "@product.image_url") %></strong>
       <%= link_to 'Back to Overview', products_path, class: "btn btn-info" %>
-    </p>
+      </p>
   </div>
   <div class="col-md-4">
     <% cache @product do %>
@@ -18,6 +18,12 @@
       <strong>Colour:</strong>
       <%= @product.colour %>
     </p>
+    <p>  
+      <strong>Views:</strong>
+        <span class="badge">
+          <%= @product.views %>
+        </span>
+      </p>
   </div>
   <div class="col-md-4">
     <p class="product-price">
@@ -54,6 +60,7 @@
     </div>
   </div>
   <div class="col-md-4">
+    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
     <%=  render "comments" %>
     <%= will_paginate @comments %>
   </div>
