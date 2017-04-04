@@ -4,11 +4,11 @@
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
-    </div>
+    </div><!-- error_explanation -->
   <% end %>
 <div class="Edit Account">
   <div class="field">
@@ -26,29 +26,29 @@
     <%= f.text_field :last_name, class: "form-control" %>
   </div>
 
- <div class="actions">
+  <div class="actions">
     <%= f.submit "Update", class: "btn btn-success"%>
   </div>
-  </div>
+</div>
   </div>
     <h2>Change your password</h2>
-    <%= f.hidden_field :reset_password_token %>
-    <div class="field">
-    <%= f.label :password, "New password" %><br />
-    <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-    <% end %>
-    <%= f.password_field :password, autofocus: true, autocomplete: "off", class: "form-control" %>
-  </div>
+      <%= f.hidden_field :reset_password_token %>
+        <div class="field">
+          <%= f.label :password, "New password" %><br />
+          <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+          <% end %>
+          <%= f.password_field :password, autofocus: true, autocomplete: "off", class: "form-control" %>
+        </div>
 
   <div class="field">
     <%= f.label :password_confirmation, "Confirm new password" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
   </div>
-   <div class="actions">
+  <div class="actions">
     <%= f.submit "Change my password", class: "btn btn-danger" %>
   </div>
-  </div>
-  </div>
+</div>
+</div>
 <%= link_to "Edit Password", users_path(@user) %>
 <% end %>

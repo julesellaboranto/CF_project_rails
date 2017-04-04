@@ -72,5 +72,5 @@ gem 'stripe'
 
 gem 'dalli'
 
- gem 'redis-rails', '~> 5.0'
+gem 'redis-rails', '~> 5.0'
 

@@ -5,7 +5,7 @@
       <strong><%= image_tag(@product.image_url, width: "390", class: "img-show thumbnail img-responsive img-zoom", data_zoom_image: "@product.image_url") %></strong>
       <%= link_to 'Back to Overview', products_path, class: "btn btn-info" %>
       </p>
-  </div>
+  </div><!-- end col -->
   <div class="col-md-4">
     <% cache @product do %>
     <p>
@@ -24,8 +24,7 @@
     <%= @product.views %>
   </span>
 </h6> 
-
-  </div>
+  </div><!-- end col -->
   <div class="col-md-4">
     <p class="product-price">
       <strong><span class="glyphicon glyphicon-euro"</span></strong>
@@ -39,9 +38,9 @@
             <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
     <% end %>
-    </div>
-  </div>
-</div>
+    </div><!-- end product-price -->
+  </div><!-- end col -->
+</div><!-- end row -->
 <hr>
 <div class="row">
   <div class="col-md-4">
@@ -50,26 +49,26 @@
         <%= link_to 'Edit this product', edit_product_path(@product) %>
       <% end %>
       <p>
-      <strong>Best comment: </strong>
-      <%= @product.highest_rating_comment.try(:body) %> 
-    </p>
-    <p>
-      <strong>And a not so good comment: </strong>
-      <%= @product.lowest_rating_comment.try(:body) %>
-    </p>
-    <p>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-    </div>
-  </div>
+        <strong>Best comment: </strong>
+          <%= @product.highest_rating_comment.try(:body) %> 
+      </p>
+      <p>
+        <strong>And a not so good comment: </strong>
+          <%= @product.lowest_rating_comment.try(:body) %>
+      </p>
+      <p>Average Rating: <div id="average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+    </div><!-- end links -->
+  </div><!-- end col -->
   <div class="col-md-4">
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-    <%=  render "comments" %>
-    <%= will_paginate @comments %>
-  </div>
+      <%=  render "comments" %>
+      <%= will_paginate @comments %>
+    </div><!-- end alert -->
   <div class="col-md-4">
     <% if signed_in? %>
       <%= render "products/new_comment" %>
     <% end %>
-  </div>
-</div>
-</div>
+  </div><!-- end col -->
+</div><!-- end row -->
+
 
