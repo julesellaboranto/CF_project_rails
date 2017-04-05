@@ -199,6 +199,9 @@ p {
 .single-product {
   border: 0.1em solid #fff;
   margin-bottom: 1em;
+  margin-left: 20px;
+  height: 440px;
+  max-width: 400px;
 }
 .product-price {
   font-size: 30px;
@@ -251,7 +254,7 @@ p {
 .carousel-inner>.item>img {
   display: inline;
   position: relative;
-  left: 80px;
+  left: 100px;
   max-width: auto;
   max-height: 30%;
   margin-left: 100px;
