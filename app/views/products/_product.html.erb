@@ -1,17 +1,17 @@
-<% cache product do %>
 <div class="col-sm-4 col-md-4 col-xs-8">
   <a class="product-container" href="<%= product_path(product) %>">
     <div class="single-product">
       <%= image_tag(product.image_url, class: "img-responsive image-prod") %>
+      <% cache product do %>
       <h3><%= product.name %></h3>
         <p class="description"><%= product.description %></p>
         <p class="color"><%= product.colour %></p>
         <p class="price">€<%= product.price %></p>
-        <% if signed_in? %>
+      <% end %>
+        <% if signed_in? && current_user.admin? %>
           <%= link_to 'Edit', edit_product_path(product) %>
           <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
         <% end %>
     </div><!-- end single-prod-->
   </a>
 </div><!-- end col -->
-<% end %>
