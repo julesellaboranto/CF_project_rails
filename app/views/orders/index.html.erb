@@ -1,4 +1,25 @@
 <h2 class="headline">My Shopping Bag</h2>
 <h2>Order History</h2>
+ <table>
+    <thead>
+      <tr>
+        <!--<th>Product Name</th>-->
+        <th class="Order_History">Order Id</th>
+        <th class="Order_History">Product Id</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <!--<td><%#= order.product.name%></td>-->
+          <td class="Order_History"><%= order.id %></td>
+          <td class="Order_History"><%= order.product_id %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+
 <h2>View Open Orders</h2>
 
